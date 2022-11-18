@@ -11,7 +11,7 @@ N/A
 ## Usage 
 
 To take this code quiz, follow this link (https://colint771.github.io/Code-Quiz/)
-![img](/Users/colint771/bootcamp/Code-Quiz/assets/Code-quiz.jpeg)
+![img]([/Users/colint771/bootcamp/Code-Quiz/assets/Code-quiz.jpeg](https://github.com/colint771/Code-Quiz/blob/de37905f352d78b91376e73eb90945f20ac78918/assets/Code-quiz.jpeg))
 
 ## Credits
 
