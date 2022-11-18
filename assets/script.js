@@ -46,7 +46,7 @@ var questionsObject = {
 var answersObject = { 
     answers: { 
         0 : {
-            0: "Strings",
+             0: "Strings",
             1: "Boolean",
             2: "Alerts",
             3: "Numbers"},
@@ -55,21 +55,21 @@ var answersObject = {
             1: "Curly Brackets",
             2: "Quotes",
             3: "Square Brackets"},
-        2 : { // Button #3
-            0: "Javascript",
-            1: "Terminal/bash",
-            2: "For loops", 
-            3: "Console.log"},      
-        3 : { // Answer to question 5 --> Button #2
-            0: "Commas",
-            1: "Curly brackets",
-            2: "Quotes", 
-            3: "Parentheses"},      
-        4 : { // Button #4
+        2 : {
             0: "Number of strings",
             1: "Other arrays",
             2: "Booleans",
-            3: "All of the above"},  
+            3: "All of the above"},      
+        3 : { 
+            0: "Javascript",
+            1: "Terminal/bash",
+            2: "For loops", 
+            3: "Console.log"},
+        4 : { 
+            0: "Commas",
+            1: "Curly brackets",
+            2: "Quotes", 
+            3: "Parentheses"},  
     }
 }
 
@@ -141,8 +141,6 @@ submitScoreEl.addEventListener("click", function() { // Submit high scores
         if ( quizUserDetails == checkUserValue[0] && highScore == checkUserValue[1] ) {
 
        
-        // Only insert if the current highScore is higher, 
-        // otherwise let the user know they had a higher score alreay
         localStorage.setItem(quizUserDetails, value); // Value is equal to 
         window.alert(highScore + " " + "is the latest entry for user initial " + enterInitialsTextArea.value + ". Entry will not be added.")
         break; 
@@ -205,11 +203,11 @@ startQuizBtnEl.addEventListener("click", function() {
 
 //debugger;
     startQuizBtnEl.style.display = 'none';
-    questionDisplay.style.display='none';
-    finalScoreDisplay.style.display = 'none';
-    enterInitials.style.display='none';
+    questionDisplayEl.style.display='none';
+    finalScoreDisplayEl.style.display = 'none';
+    enterInitialsEl.style.display='none';
     score = 0; 
-    timeLeft=60;
+    timeLeft=75;
     htmlTimeLeft.textContent = timeLeft; 
     finalAnswerCheck = 0;
     checkTimes = 1; 
