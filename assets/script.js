@@ -56,20 +56,20 @@ var answersObject = {
             2: "Quotes",
             3: "Square Brackets"},
         2 : { // Button #3
+            0: "Number of strings",
+            1: "Other arrays",
+            2: "Booleans",
+            3: "All of the above"},      
+        3 : { // Answer to question 5 --> Button #2
             0: "Javascript",
             1: "Terminal/bash",
             2: "For loops", 
             3: "Console.log"},      
-        3 : { // Answer to question 5 --> Button #2
+        4 : { // Button #4
             0: "Commas",
             1: "Curly brackets",
             2: "Quotes", 
-            3: "Parentheses"},      
-        4 : { // Button #4
-            0: "Number of strings",
-            1: "Other arrays",
-            2: "Booleans",
-            3: "All of the above"},  
+            3: "Parentheses"},  
     }
 }
 
@@ -205,9 +205,9 @@ startQuizBtnEl.addEventListener("click", function() {
 
 //debugger;
     startQuizBtnEl.style.display = 'none';
-    questionDisplay.style.display='none';
-    finalScoreDisplay.style.display = 'none';
-    enterInitials.style.display='none';
+    questionDisplayEl.style.display='none';
+    finalScoreDisplayEl.style.display = 'none';
+    enterInitialsEl.style.display='none';
     score = 0; 
     timeLeft=60;
     htmlTimeLeft.textContent = timeLeft; 
@@ -255,7 +255,7 @@ startQuizBtnEl.addEventListener("click", function() {
                 if (questionDisplay.textContent === "The condition statement if/else is enclosed with the following:" && answer1BtnEl.textContent === "Parentheses") {
                     console.log("Correct");
                     questionNumber = 2; 
-                    answerNumber = 4;
+                    answerNumber = 0;
                     answerCorrectWrong.style.display="";
                     answerCorrectWrong.textContent = "Correct!";
                     answerCorrectWrong.style.borderTop = "solid #800080";
@@ -415,7 +415,7 @@ startQuizBtnEl.addEventListener("click", function() {
                     answerCorrectWrongGrid.appendChild(answerCorrectWrong);
                 } else if (questionDisplay.textContent === "A very useful tool to debug arrays is:" && answer3BtnEl.textContent === "For loops") {
                     console.log("Correct");
-                    questionNumber = 4; 
+                    questionNumber = 3; 
                     answerNumber =3;
                     answerCorrectWrong.style.display=""; 
                     answerCorrectWrong.textContent = "Correct!";
